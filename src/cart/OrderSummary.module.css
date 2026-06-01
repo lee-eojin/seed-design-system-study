@@ -1,0 +1,31 @@
+.container {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--seed-scale-color-gray-700);
+}
+
+.divider {
+  height: 1px;
+  background: var(--seed-scale-color-gray-200);
+  margin: 4px 0;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--seed-scale-color-gray-900);
+}
+
+.totalAmount {
+  color: var(--seed-semantic-color-primary);
+}
