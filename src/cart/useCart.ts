@@ -10,7 +10,7 @@ export function useCart(initialItems: CartProduct[]) {
     new Set(initialItems.map((item) => item.id))
   );
 
-  const allChecked = selected.size === items.length;
+  const allChecked = items.length > 0 && selected.size === items.length;
   const someChecked = selected.size > 0 && !allChecked;
 
   function toggleItem(id: number) {
@@ -23,6 +23,15 @@ export function useCart(initialItems: CartProduct[]) {
 
   function toggleAll() {
     setSelected(allChecked ? new Set() : new Set(items.map((item) => item.id)));
+  }
+
+  function removeItem(id: number) {
+    setItems((prev) => prev.filter((item) => item.id !== id));
+    setSelected((prev) => {
+      const next = new Set(prev);
+      next.delete(id);
+      return next;
+    });
   }
 
   function changeQuantity(id: number, delta: number) {
@@ -49,6 +58,7 @@ export function useCart(initialItems: CartProduct[]) {
     someChecked,
     toggleItem,
     toggleAll,
+    removeItem,
     changeQuantity,
     orderAmount,
     shippingFee,

@@ -3,6 +3,14 @@
   align-items: center;
   gap: 12px;
   padding: 16px 0;
+  position: relative;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  color: var(--seed-scale-color-gray-500);
 }
 
 .imageWrapper {
