@@ -12,12 +12,6 @@
   color: var(--seed-scale-color-gray-700);
 }
 
-.divider {
-  height: 1px;
-  background: var(--seed-scale-color-gray-200);
-  margin: 4px 0;
-}
-
 .totalRow {
   display: flex;
   justify-content: space-between;

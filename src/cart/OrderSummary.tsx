@@ -1,3 +1,4 @@
+import { Divider } from "@seed-design/react";
 import styles from "./OrderSummary.module.css";
 
 interface OrderSummaryProps {
@@ -17,7 +18,7 @@ export function OrderSummary({ orderAmount, shippingFee, totalAmount }: OrderSum
         <span>배송비</span>
         <span>{shippingFee === 0 ? "무료" : `${shippingFee.toLocaleString()}원`}</span>
       </div>
-      <div className={styles.divider} />
+      <Divider />
       <div className={styles.totalRow}>
         <span>총 결제 금액</span>
         <span className={styles.totalAmount}>{totalAmount.toLocaleString()}원</span>

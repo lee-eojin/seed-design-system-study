@@ -21,3 +21,4 @@
 | [2026-06-02](20260602.md) | ForwardedRef 타입 불일치, 오픈소스 버전업과 타입 에러, 제네릭이 쓰이는 맥락 |
 | [2026-06-03 (1)](20260603-01.md) | 당근 앱 UX 패턴 6개 가추법 분석 (loading≠disabled, PullToRefresh, ScrollFog, BottomSheet, Snackbar, HelpBubble) |
 | [2026-06-03 (2)](20260603-02.md) | Checkbox HiddenInput 누락 버그 — compound component 자유도와 실수 가능성의 트레이드오프 |
+| [2026-06-06](20260606.md) | 미션 장바구니와 비교해 SEED로 UX 개선 (Snackbar 실행취소, Callout 무료배송, BottomSheet 주문확인, Divider) — 디자인 시스템과 도메인 로직의 경계 |

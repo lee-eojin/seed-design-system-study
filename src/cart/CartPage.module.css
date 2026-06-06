@@ -22,9 +22,8 @@
   padding: 16px 0;
 }
 
-.divider {
-  height: 1px;
-  background: var(--seed-scale-color-gray-100);
+.notice {
+  padding: 16px 0 0;
 }
 
 .list {

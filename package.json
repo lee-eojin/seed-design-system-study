@@ -17,6 +17,7 @@
     "vite": "^8.0.12"
   },
   "dependencies": {
+    "@karrotmarket/react-monochrome-icon": "^1.18.0",
     "@seed-design/css": "^1.2.12",
     "@seed-design/react": "^1.2.10",
     "react": "^19.2.6",
